@@ -30,8 +30,8 @@ Since REP 143 has not been landed yet. To make a release you need special branch
 ## Setup ane enter the environment
 
 ```
-docker build -ti bloomenv bloomenv/
-docker run -ti bloomenv 
+docker build -ti bloom_env bloom_env/
+docker run -ti bloom_env 
 ```
 
 ## Execute Bloom
