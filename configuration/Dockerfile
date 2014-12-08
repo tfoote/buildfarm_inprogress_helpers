@@ -10,9 +10,7 @@ RUN . venv/bin/activate && curl https://bootstrap.pypa.io/get-pip.py | python3
 
 RUN . venv/bin/activate && pip3 install empy
 RUN . venv/bin/activate && pip3 install git+git://github.com/dirk-thomas/jenkinsapi.git@feature/config_view
-RUN .  venv/bin/activate && pip3 install git+git://github.com/ros-infrastructure/rosdistro.git@rep143
-#RUN . venv/bin/activate && pip install git+git://github.com/ros-infrastructure/rosdep.git@wjw_rep143
-
+RUN . venv/bin/activate && pip3 install git+git://github.com/ros-infrastructure/rosdistro.git
 
 RUN mkdir -p /root/.buildfarm
 ADD jenkins.ini /root/.buildfarm/jenkins.ini
