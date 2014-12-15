@@ -17,5 +17,7 @@ ADD jenkins.ini /root/.buildfarm/jenkins.ini
 
 RUN git  clone https://github.com/ros-infrastructure/ros_buildfarm.git
 
+ADD entrypoint.bash /entrypoint.bash
 
-CMD . venv/bin/activate && bash
+ENTRYPOINT ["/entrypoint.bash"]
+
