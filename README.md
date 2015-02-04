@@ -29,7 +29,7 @@ If you want to tweak this docker image you can build it yourself and run it like
 This is an alternative to the above method.
 
 ```
-docker build -ti configuration configuration/
+docker build -t configuration configuration/
 docker run -ti configuration -v ~/.buildfarm/jenkins.ini:/root/.buildfarm/jenkins.ini:ro https://MYTOKEN@raw.githubusercontent.com/MY_FORK/ros_buildfarm_config/master/MY_FILE.yaml
 ```
 
